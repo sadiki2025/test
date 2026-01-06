@@ -1,110 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech2etc Ecommerce Tutorial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function validateInput(input) {
-            var regex = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
-            return input.replace(regex, "");
-        }
-
-        function handleSubmit(event) {
-            event.preventDefault();
-            var userInput = document.getElementById("userInput").value;
-            var sanitizedInput = validateInput(userInput);
-            document.getElementById("output").innerText = sanitizedInput;
-        }
-    </script>
-
 </head>
-
 <body>
 
-    <!--section header start-->
     <section id="header">
-        <a href="#"><img src="images/logo." class="logo"></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="Ig-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        <a href="#"><img src="images/logo.png" alt=""></a>
+        
+            <div>
+                
+            <ul id="nav">
+               <li><a class="active" href="home.html">home</a></li>
+               <li><a href="shop.html">shop</a></li>
+               <li><a href="blog.html">blog</a></li>
+               <li><a href="contact.html">contact</a></li>
+               <li><a href=""></a></li>
             </ul>
-        </div>
+           </div>
+           </section>
 
-        <div id="mobile">
-            <a href="cart.html"><i class=" fa-solid fa-bag-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
-    </section>
-    <!--section header end-->
-
-    <!--section hero start-->
     <section id="hero">
-        <h4>Trade-in-offer</h4>
+         <h4>Trade-in-offer</h4>
         <h2>Super value deals</h2>
         <h1>On all products</h1>
         <p>Save-more with coupons & up to 70% off!</p>
-        <button>Shop Now</button>
-        <!--section hero end-->
-
+        
+            <button class="btn">Shop Now</button>
+       
     </section>
+     <section id="feature">
+        <div class="fe-box">
+            <img src="images/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
 
-    <!--section-feature start-->
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="images/NIKE1.png" alt="">
-            <h6>free shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/NIKE2.jpg" alt="">
-
-            <h6>free shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/NIKE3.jpg" alt="">
-
-            <h6>free shipping</h6>
-        </div>
-        <div class="fe-box">
-
-            <img src="images/NIKE4.jpg" alt="">
-            <h6>free shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/NIKE5.jpg" alt="">
-            <h6>free shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="images/NIKE8.jpg" alt="">
-            <h6>free shipping</h6>
-        </div>
-    </section>
-    <!--section-feature end-->
-
-    <!--section-product1 start-->
-    <section id="product1" class="section-p1">
+     </section>
+     <section>
+        <div class="container">
+            <section id="product1" class="section-p1">
         <h2>featured products</h2>
-        <p>Summer Collection Now Morden Design</p>
+        <p>Summer Collection Now Moreen Design</p>
         <div class="pro-container">
             <div class="pro">
-                <a href="images/NIKE1.png" target="_blank"><img src="images/NIKE1.png" alt="Free Shipping"></a>
+                <a href="images/shoes1.png" target="_blank"><img src="images/shoes1.png" alt="Free Shipping"></a>
                 <div class="des">
                     <span>Nike</span>
                     <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
+                    <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -113,697 +81,64 @@
                     </div>
                     <h4>DH78</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping" class="cart"></i></a>
             </div>
 
-            <div class="pro">
-                <a href="images/nike2.jpg" target="_blank"><img src="images/nike2.jpg" alt="Free Shipping"></a>
-
+						<div class="pro">
+                <a href="images/shoes1.png" target="_blank"><img src="images/shoes1.png" alt="Free Shipping"></a>
                 <div class="des">
-                    <span>nike</span>
+                    <span>Nike</span>
                     <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
+                    <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>300 dh</h4>
+                    <h4>DH78</h4>
                 </div>
-                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping" class="cart"></i></a>
             </div>
-
-            <div class="pro">
-                <a href="images/NIKE3.jpg" target="_blank"><img src="images/NIKE3.jpg" alt="Free Shipping"></a>
+						<div class="pro">
+                <a href="images/shoes1.png" target="_blank"><img src="images/shoes1.png" alt="Free Shipping"></a>
                 <div class="des">
-                    <span>nike</span>
+                    <span>Nike</span>
                     <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
+                    <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>300 dh</h4>
+                    <h4>DH78</h4>
                 </div>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping" class="cart"></i></a>
             </div>
-
-            <div class="pro">
-                <a href="images/NIKE4.jpg" target="_blank"><img src="images/NIKE4.jpg" alt="free shipping"></a>
+						<div class="pro">
+                <a href="images/shoes1.png" target="_blank"><img src="images/shoes1.png" alt="Free Shipping"></a>
                 <div class="des">
-                    <span>nike</span>
+                    <span>Nike</span>
                     <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
+                    <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>300 dh</h4>
+                    <h4>DH78</h4>
                 </div>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike5.jpg" target="_blank"><img src="images/nike5.jpg" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>300 dh</h4>
-                </div>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike6.png" target="_blank"><img src="images/nike6.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping" class="cart"></i></a>
             </div>
 
 
 
-            <div class="pro">
-                <a href="images/NIKE8.jpg" target="_blank"><img src="images/NIKE8.jpg" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
+     </section>
+        
 
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-
-            <div class="pro">
-                <a href="images/nike7.png" target="_blank"><img src="images/nike7.png" alt="free shipping"></a>
-                <div class="des">
-                    <span>nike</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-            </div>
-        </div>
-    </section>
-    <!--section-product1 end-->
-
-
-    <!--section-banner start-->
-    <section id="banner" class="section-m1">
-        <h4>Repair Services</h4>
-        <h6>Up <span>50% OFF</span>The Best Nike High-Top Sneakers You Can Buy Right Now</h6>
-        <BUtton class="normal">Explore More>
-    </section>
-    <!--section-banner end-->
-
-    <!--section-product1 start-->
-    <section id="product1" class="section-p1">
-        <h1>New arrivals</h1>
-        <p>Summer Collection Now Morden Design</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="images/NIKE3.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="images/NIKE4.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="images/nike5.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="images/nike6.png" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="images/nike7.png" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-
-
-            <div class="pro">
-                <img src="images/nike8.png" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="images/nike9.png" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-
-            <div class="pro">
-                <img src="images/nike9.png" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Carton Astronaut shoes</h5>
-                    <div class="start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-            </div>
-        </div>
-        <!--section-product1 end-->
-
-        <!--section-m1 start-->
-    </section>
-    <!--section-product1 end-->
-
-
-    <!--section-newsletter start-->
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newtext">
-            <h4>Sign Up For newsletter</h4>
-            <p>Get E-mail updates about our latest shop and.<span>special offers.</span>
-            </p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Your email adidas">
-            <button class="normal">Sing Up</button>
-        </div>
-
-    </section>
-    <!--section- newsletter end-->
-
-    <!--footer- start-->
-    <footer class="section-1">
-        <div class="col">
-            <img class="logo" src="images/logo0.png" alt="">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong>2024 Nike,
-                All Rights Reserved All Rights Reserved All Rights Reserved </p>
-            <p><strong>Phone:</strong>2222222555522</p>
-            <p><strong>Hours:</strong>10:- 18:00, Mon- Sat</p>
-            <div class="follow">
-                <h4>follow</h4>
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"> </i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fabfa-youtube"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">About Us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
-        </div>
-
-        <div class="col">
-            <h4>My Acount</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View cART</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
-        </div>
-
-        <div class="col install">
-            <h4>install App</h4>
-            <p>form App Store or Google Play</p>
-            <div class="row">
-                <img src="images/app (3).jpg" alt="">
-                <img src="images/play.jpg" alt="">
-            </div>
-            <p>
-            <p>Secured Payment Gateways</p>
-            </p>
-            <img src="images/pay-pay.png" alt="">
-        </div>
-
-        <div class="copyright">
-            <p> 2025, Tech2 etc -HTML CSS Ecommerce template</p>
-        </div>
-    </footer>
-    <!--footer- end-->
-
-
-    <script>
-        const bar = document.getElementById('bar');
-        const close = document.getElementById('close');
-        const nav = document.getElementById('navbar');
-
-        if (bar) {
-            bar.addEventListener('click', () => {
-                nav.classList.add('active');
-
-
-            })
-        }
-
-
-
-        if (close) {
-            close.addEventListener('click', () => {
-                nav.classList.remove('active');
-
-
-            })
-        }
-
-    </script>
+    
+<script src="script.js"></script>
 </body>
-
 </html>

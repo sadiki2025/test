@@ -69,11 +69,6 @@ body {
 }
 
 /* Header start */
-
-
-
-
-/* Header */
 #header {
     display: flex;
     justify-content: space-between;
